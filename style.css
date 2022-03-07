@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{margin:0;
+    background-image: url(ss.png);
+    background-position: right top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    font-family: 'Gotham Book';
+    font-size:18px;
+}
+
+#frame{
+    margin: 16px;
+    padding: 16px;
+    border:4px solid #545454;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    background:#ffffff99;
+}
+
+@media (max-width: 470px)
+{
+    body{background-image:none}
+    #logo{width:100%}
+    #frame{background:transparent}
+}
+
+
+@media (min-width: 800px)
+{
+    #frame { padding:36px; margin:24px}
+    
+}
